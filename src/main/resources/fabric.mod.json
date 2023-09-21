@@ -1,41 +1,35 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "juwa-place",
+	"version": "0.1",
+	"name": "Juwa Gomme r/place schematic Mod",
+	"description": "Erhalte schnell neue schematic updates!",
 	"authors": [
-		"Me!"
+		"Onako2"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://twitch.tv/juwa_chan",
+		"sources": "https://github.com/Onako2/juwa-rplace-mod",
+		"schematics": "https://github.com/Onako2/juwa-schematics",
+		"discord": "https://discord.gg/4WwSGjwHMm",
+		"support": "https://discord.gg/nFpa776nQk"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "MIT",
+	"icon": "assets/juwa-place/icon.png",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"rs.onako2.start"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"rs.onako2.InitCommands"
 		]
 	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"fabricloader": ">=0.14.17",
+		"minecraft": "1.20.*",
 		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"litematica": "*"
 	}
 }
