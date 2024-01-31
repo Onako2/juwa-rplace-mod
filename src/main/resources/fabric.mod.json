@@ -19,7 +19,7 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"rs.onako2.start"
+			"rs.onako2.Juwa"
 		],
 		"client": [
 			"rs.onako2.InitCommands"

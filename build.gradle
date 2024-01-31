@@ -22,7 +22,7 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"place-juwa" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
