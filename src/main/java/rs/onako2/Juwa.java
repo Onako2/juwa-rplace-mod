@@ -1,10 +1,8 @@
 package rs.onako2;
 
-import net.minecraft.text.Text;
+import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import net.fabricmc.api.ModInitializer;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionException;
@@ -29,7 +27,5 @@ public class Juwa implements ModInitializer {
             LOGGER.error("Failed updating schematics!");
             return null;
         });
-        
-
     }
 }

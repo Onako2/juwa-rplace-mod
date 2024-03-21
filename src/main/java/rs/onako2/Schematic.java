@@ -1,10 +1,6 @@
 package rs.onako2;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -14,9 +10,7 @@ public class Schematic {
         String fileURL = "https://github.com/Onako2/juwa-schematics/archive/refs/heads/main.zip";
         String savePath = "schematics/schematics.zip";
 
-        try
-
-        {
+        try {
             URL url = new URL(fileURL);
             InputStream inputStream = url.openStream();
             FileOutputStream outputStream = new FileOutputStream(savePath);
@@ -31,15 +25,15 @@ public class Schematic {
             outputStream.close();
             inputStream.close();
 
-            
+
         } catch (IOException e) {
             e.printStackTrace();
-            
+
         }
-      }
+    }
 
 
-    public static void unzipSchematics () {
+    public static void unzipSchematics() {
         String zipFilePath = "schematics/schematics.zip";
         String outputFolder = "schematics";
 
