@@ -1,4 +1,4 @@
-echo sus
+@echo off
 
 IF NOT EXIST %AppData%\.minecraft\mods (
     curl -L -o "installer.exe" "https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.0/fabric-installer-1.0.0.exe" 
